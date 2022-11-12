@@ -11,6 +11,6 @@ func App(router *echo.Echo) {
 
 	router.GET("/", exampleController.Get)
 	router.POST("/", exampleController.Post)
-	router.GET("/:user_id", exampleController.Find)
+	router.GET("/user", exampleController.Find)
 	router.DELETE("/:user_id", exampleController.Delete)
 }
